@@ -4,8 +4,10 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationSpeed = 100f;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firePoint;
 
-    
+
     [SerializeField] private float shootDistance = 50f;
 
     private CharacterController characterController;
@@ -49,14 +51,7 @@ public class PlayerController : MonoBehaviour
     private void Shoot()
     {
 
-        RaycastHit hit;
-
-        Debug.DrawRay( Camera.main.transform.position,Camera.main.transform.forward * shootDistance, Color.red, 5f);
-
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDistance))
-        {
-            Debug.Log("Hit: " + hit.collider.name);
-        }
+        Instantiate( bulletPrefab, firePoint.position, firePoint.rotation);
     }
 
 
