@@ -1,8 +1,11 @@
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public static event Action<string> OnUnitPurchased;
+
 
     private void Awake()
     {
@@ -19,5 +22,14 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Debug.Log("Game Manager Created");
+        PurchaseUnit("Tank");
     }
+
+    public void PurchaseUnit(string unitName)
+    {
+        Debug.Log(unitName + " purchased");
+
+        OnUnitPurchased?.Invoke(unitName);
+    }
+
 }
