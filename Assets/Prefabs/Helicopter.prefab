@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8647147286453426235}
   - component: {fileID: 2220587345732948998}
   - component: {fileID: 137510080958042998}
+  - component: {fileID: -9042520723474226972}
   m_Layer: 0
   m_Name: Helicopter
   m_TagString: Untagged
@@ -129,3 +130,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Helicopter
   health: 100
   moveSpeed: 5
+--- !u!114 &-9042520723474226972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6123074496355263725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebe08c8ebab33447a7c2ad384161d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AirDefense
+  moveSpeed: 4

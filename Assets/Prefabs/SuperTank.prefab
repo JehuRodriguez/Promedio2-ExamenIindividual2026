@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6349261873623329920}
   - component: {fileID: 7370900179980109557}
   - component: {fileID: 458911359564371668}
+  - component: {fileID: -5022269054052076576}
   m_Layer: 0
   m_Name: SuperTank
   m_TagString: Untagged
@@ -127,3 +128,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SuperTank
   health: 100
   moveSpeed: 5
+--- !u!114 &-5022269054052076576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609151703060750576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0716983e51cd34780fbb1f1dff9f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitMovement
+  target: {fileID: 0}
+  moveSpeed: 3

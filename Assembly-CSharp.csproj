@@ -64,7 +64,9 @@
     <Compile Include="Assets\Scripts\UNITS\SuperPlane.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\GameManager.cs" />
     <Compile Include="Assets\Scripts\AI\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\UNITS\UnitMovement.cs" />
     <Compile Include="Assets\Scripts\UNITS\Tank.cs" />
+    <Compile Include="Assets\Scripts\UNITS\AirDefense.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\UnitySpawner.cs" />
     <Compile Include="Assets\Scripts\PLAYER\PlayerTransform.cs" />
     <Compile Include="Assets\Scripts\UNITS\Helicopter.cs" />
@@ -72,8 +74,10 @@
     <Compile Include="Assets\Scripts\PLAYER\CameraController.cs" />
     <Compile Include="Assets\Scripts\PLAYER\PlayerController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\AI\AIUnitSpawner.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\UnitObserver.cs" />
     <Compile Include="Assets\Scripts\INTERFACES\iDamageable.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\BaseEnemy.cs" />
     <Compile Include="Assets\Scripts\UNITS\Unit.cs" />
     <Compile Include="Assets\Scripts\PLAYER\Bullet.cs" />
     <Compile Include="Assets\Scripts\UNITS\SuperTank.cs" />
